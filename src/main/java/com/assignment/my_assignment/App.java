@@ -39,9 +39,9 @@ public class App
         //enter the email and password then click login
         driver.findElement(By.id("email")).sendKeys("sambaraju_adithya@gmail.com");
                 
-        driver.findElement(By.id("password")).sendKeys("magic");
+        driver.findElement(By.id("pass")).sendKeys("magic");
 
-        driver.findElement(By.id("u_0_5_p7")).click();
+        driver.findElement(By.name("login")).click();
         try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
