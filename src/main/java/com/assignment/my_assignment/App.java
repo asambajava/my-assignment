@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 /**
  * Hello world!
  *
@@ -19,7 +21,8 @@ public class App
         System.out.println(cal.divide(3, 3));
         System.out.println(cal.subtract(40, 40));
         //initialize the drive
-        System.setProperty("webdriver.chrome.driver","/Users/asambaraju/Desktop/Devops_Demo/chromedriver-mac-arm64/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","/Users/asambaraju/Desktop/Devops_Demo/chromedriver-mac-arm64/chromedriver");
+        WebDriverManager.chromedriver().setup();
         
         //set chrome parameters
         ChromeOptions chromeOptions = new ChromeOptions();
