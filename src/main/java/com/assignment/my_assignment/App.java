@@ -26,6 +26,8 @@ public class App
         
         //set chrome parameters
         ChromeOptions chromeOptions = new ChromeOptions();
+        //add configuration
+        chromeOptions.addArguments("--headless");
         
         //initialize web driver 
         WebDriver driver = new ChromeDriver(chromeOptions);
