@@ -34,6 +34,8 @@ public class App
         
         //open the URL in the browser
         driver.get("https://www.facebook.com/");
+        System.out.println("hello test cases are executing");
+        
         try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -54,5 +56,6 @@ public class App
 			e.printStackTrace();
 		}
         driver.close();
+        System.out.println("hello test cases are executed ");
     }
 }
